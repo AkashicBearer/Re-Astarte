@@ -1,6 +1,12 @@
-/* Re;Astarte v0.1.0a, Your average transparent theme! */
-/* CC AkashicBearer 2020 */
-/* Small note please DM me on discords, send an email, or report it on github if there is an issue with the theme (like missing elements) */
+/**
+* @name ReAstarte
+* @author AkashicBearer
+* @version 0.1
+* @description A Transparent like, theme with backgrounds for all areas of discord
+* @source https://github.com/AkashicBearer/Re-Astarte
+* @authorLink https://github.com/AkashicBearer
+*/
+/* Small note please DM me on Discord, send an email, or report it on github if there is an issue with the theme (like missing elements) */
 /*---------- BACKGROUND ----------*/
 body {
     background: url("https://cdn.discordapp.com/attachments/622572402605293573/632100752214458368/Konachan.com_-_289931_armor_blue_eyes_bow_weapon_brown_hair_fuu_fuore_japanese_clothes_long_hair_ori.jpg");
