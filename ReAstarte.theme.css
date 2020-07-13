@@ -317,6 +317,7 @@ div.sidebar-2K8pFh:hover {
     border-radius: 20px;
     background-color: rgba(40, 40, 40, .4);
     margin-top: 5px;
+    margin-right: 5px;
     padding-bottom: 10px;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
@@ -588,7 +589,7 @@ div.sidebar-2K8pFh:hover {
 
 /*---------- FILE ATTACHMENT POPUP ----------*/
 .uploadModal-2ifh8j {
-     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/622572402605293573/633521771210997767/Archer.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/622572402605293573/633521771210997767/Archer.png");
     padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -631,3 +632,28 @@ div.sidebar-2K8pFh:hover {
 }
 /* SELECTOR HOVER */
 
+/*---------- SEARCH SETTINGS POPUP THINGY ----------*/
+
+.container-3ayLPN, .container-yqaFcK {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/622572402605293573/633521771210997767/Archer.png");
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+	margin-right: 0px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.resultsGroup-r_nuzN,  {
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);    
+}
