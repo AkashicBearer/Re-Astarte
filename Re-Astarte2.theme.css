@@ -1,5 +1,4 @@
-//META{"name":"ReAstarte2","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.1", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
-
+//META{"name":"ReAstarte","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.1", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
 /**
 * @name ReAstarte
 * @author AkashicBearer
@@ -9,7 +8,6 @@
 * @authorLink https://github.com/AkashicBearer
 */
 /* Small note please DM me on Discord, send an email, or report it on github if there is an issue with the theme (like missing elements) */
-
 /*---------- BACKGROUND ----------*/
 body {
     background: url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
@@ -637,7 +635,7 @@ div.sidebar-2K8pFh:hover {
 
 /* BACKGROUND */
 .autocomplete-1vrmpx, .autocomplete-Z9HwQh {
-     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
     border-radius: 20px;
     background-color: rgba(40, 40, 40, .4);
     margin-top: 5px;
@@ -648,8 +646,8 @@ div.sidebar-2K8pFh:hover {
 } 
 
 /* HIGHLIGHT ALL ROWS AND ADD BORDER */
-.selectable-3dP3y-{
-     border-radius: 20px;
+.selectable-3dP3y- {
+    border-radius: 20px;
     background-color: rgba(40, 40, 40, .4);
     margin-top: 5px;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
@@ -658,7 +656,19 @@ div.sidebar-2K8pFh:hover {
     border: 1px solid rgba(0, 0, 0, .4);   
 }
 /* SELECTOR HOVER */
-
+.selectorSelected-1_M1WV {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+	margin-right: 0px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);
+}
 
 /*---------- SEARCH SETTINGS POPUP THINGY ----------*/
 
