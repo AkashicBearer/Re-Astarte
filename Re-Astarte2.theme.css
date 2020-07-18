@@ -1,13 +1,16 @@
-//META{"name":"ReAstarte","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.1", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
+//META{"name":"ReAstarte2","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.1", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
+
 /**
-* @name ReAstarte
+* @name ReAstarte2
 * @author AkashicBearer
 * @version 0.1
 * @description A Transparent like, theme with backgrounds for all areas of discord
 * @source https://github.com/AkashicBearer/Re-Astarte
 * @authorLink https://github.com/AkashicBearer
 */
+
 /* Small note please DM me on Discord, send an email, or report it on github if there is an issue with the theme (like missing elements) */
+
 /*---------- BACKGROUND ----------*/
 body {
     background: url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
@@ -684,7 +687,7 @@ div.sidebar-2K8pFh:hover {
     border: 1px solid rgba(0, 0, 0, .4);
 }
 
-.resultsGroup-r_nuzN {
+.layer-2KE1M9 {
     border-radius: 20px;
     background-color: rgba(40, 40, 40, .4);
     margin-top: 0px;
@@ -694,6 +697,18 @@ div.sidebar-2K8pFh:hover {
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0, .4);    
+}
+
+/*---------- Pins ----------*/
+ .root-1gCeng {
+    border-radius: 20px;
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 5px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4); 
 }
 
 /*---------- ??? ----------*/
