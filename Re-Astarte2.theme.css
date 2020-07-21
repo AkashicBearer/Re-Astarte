@@ -3,7 +3,7 @@
 /**
 * @name ReAstarte2
 * @author AkashicBearer
-* @version 0.1
+* @version 0.3
 * @description A Transparent like, theme with backgrounds for all areas of discord
 * @source https://github.com/AkashicBearer/Re-Astarte
 * @authorLink https://github.com/AkashicBearer
@@ -42,6 +42,12 @@ body {
     --activity-card-background: transparent;
     --deprecated-panel-background: transparent
 }
+
+#app-mount .backdrop-1wrmKB, .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
+    background: transparent !important;
+}
+
+
 /*---------- SLIDE IN AND OUT ANIMATION ----------*/
 /* CHANNELS/DMS */
 div.sidebar-2K8pFh {
@@ -193,6 +199,45 @@ div.sidebar-2K8pFh:hover {
     border-color: rgba(255, 255, 255, 0);
     background-color: rgba(64, 68, 75, 1);
 }
+/*---------- SCROLL BAR CHANGES ----------*/
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(64, 68, 75, 1);
+    border-radius: 0;
+}
+.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(64, 68, 75, 1);
+    border-radius: 0;
+}
+.scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    border-color: rgba(32, 34, 37, 1);
+    background-color: rgba(64, 68, 75, 1);
+    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
+    border-radius: 0;
+}
+.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    border-color: rgba(32, 34, 37, 1);
+    background-color: rgba(64, 68, 75, 1);
+    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
+    border-radius: 0;
+}
+
+/*  SCROLLBAR  */
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {         
+    background-color: #00000036;
+}
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: #00f2ff6e;
+}
+.thumb-2JwNFC {
+    background: rgba(0, 0, 0, .5) !important;
+}
+.track-1JN30G,
+.thumb-2JwNFC {
+    border: none !important;
+}
+
 /*---------- PROFILE TAB ----------*/
 /* SPOTIFY FIX */
 .headerSpotify-zpWxgT {
@@ -560,45 +605,6 @@ div.sidebar-2K8pFh:hover {
     background-color: rgba(64, 68, 75, 1);
 }
 
-/*---------- SCROLL BAR CHANGES ----------*/
-.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track {
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgba(64, 68, 75, 1);
-    border-radius: 0;
-}
-.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgba(64, 68, 75, 1);
-    border-radius: 0;
-}
-.scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-    border-radius: 0;
-}
-.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-    border-radius: 0;
-}
-
-/*  SCROLLBAR  */
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {         
-    background-color: #00000036;
-}
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    background-color: #00f2ff6e;
-}
-.thumb-2JwNFC {
-    background: rgba(0, 0, 0, .5) !important;
-}
-.track-1JN30G,
-.thumb-2JwNFC {
-    border: none !important;
-}
-
 /* not the emoji tab, but emoji bar */
 .emojiButton-jE9tXC {
     display:none;
@@ -712,3 +718,12 @@ div.sidebar-2K8pFh:hover {
 }
 
 /*---------- ??? ----------*/
+.modal-3c3bKg {
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 5px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4); 
+}
