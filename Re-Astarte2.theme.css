@@ -1,9 +1,9 @@
-//META{"name":"ReAstarte2","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.1", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
+//META{"name":"ReAstarte2","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.5", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
 
 /**
 * @name ReAstarte2
 * @author AkashicBearer
-* @version 0.3
+* @version 0.5
 * @description A Transparent like, theme with backgrounds for all areas of discord
 * @source https://github.com/AkashicBearer/Re-Astarte
 * @authorLink https://github.com/AkashicBearer
@@ -13,11 +13,11 @@
 
 /*---------- BACKGROUND ----------*/
 body {
-    background: url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url(https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg);
     background-size: cover;
+    background-position: center;
 }
+
 .appMount-3lHmkl {
     background: rgba(0, 0, 0, .6);
 }
@@ -34,13 +34,14 @@ body {
     --interactive-hover: #dcddde;
     --interactive-active: #fff;
     --interactive-muted: #4f545c;
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
     --background-primary: transparent;
     --background-secondary: transparent;
+    --background-secondary-alt: transparent;
     --background-tertiary: transparent;
     --background-accent: transparent;
     --background-floating: rgba(0, 0, 0, .8);
-    --activity-card-background: transparent;
-    --deprecated-panel-background: transparent
 }
 
 #app-mount .backdrop-1wrmKB, .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
@@ -240,7 +241,7 @@ div.sidebar-2K8pFh:hover {
 
 /*---------- PROFILE TAB ----------*/
 /* SPOTIFY FIX */
-.headerSpotify-zpWxgT {
+.headerSpotify-zpWxgT, .topSectionSpotify-1lI0-P {
     border-radius: 15px;
     background-color: rgba(79, 170, 101, .36);
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
@@ -294,6 +295,48 @@ div.sidebar-2K8pFh:hover {
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0, .4);
+}
+/* Role Add Popup */
+.container-VSDcQc {
+    background-image: url(https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg);
+	border-radius: 15px;
+    background-color: rgba(40, 40, 40, .4);
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+.header-2bNvm4 {
+    background-image: url(https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg);
+	border-radius: 15px;
+    background-color: rgba(40, 40, 40, .4);
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);
+    margin-bottom: 5px;
+}
+
+.sectionTag-pXyto9 {
+	background-image: url(https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg);
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 5px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4);   
+}
+
+.row-rrHHJU {
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 5px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, .4); 
+    margin-left: 10px;
 }
     
 /* BACKGROUND BORDER RADIUS */
