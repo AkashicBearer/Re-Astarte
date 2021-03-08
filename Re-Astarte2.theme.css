@@ -18,7 +18,10 @@ body {
 .app-mount .backdrop-1wrmKB, .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
 	background: transparent !important;
 }
-
+/* Change last value from 0.77 to any other decimal to change transperency for bg */
+.layers-3iHuyZ {
+    background-color: rgba(0, 0, 0, 0.77);
+}
 /*---------- REMOVE DARK & WHITE THEME BACKGROUNDS ----------*/
 .theme-dark,
 .theme-light {
@@ -367,9 +370,6 @@ div.sidebar-2K8pFh:hover {
 }
 .tooltip-2QfLtc {
 	border-radius: 7px;
-}
-.layers-3iHuyZ {
-    background-color: rgba(0, 0, 0, 0.77);
 }
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
   background-color: rgba(0,0,0,0.2) !important;
