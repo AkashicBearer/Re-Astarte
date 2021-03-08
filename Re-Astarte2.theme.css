@@ -1,9 +1,7 @@
-//META{"name":"ReAstarte2","description":"A Transparent like, theme with backgrounds for all areas of discord","author":"AkashicBearer","version":"0.5", "version":"https://github.com/AkashicBearer/Re-Astarte"}*//
-
 /**
 * @name ReAstarte2
 * @author AkashicBearer
-* @version 0.5
+* @version 1.0
 * @description A Transparent like, theme with backgrounds for all areas of discord
 * @source https://github.com/AkashicBearer/Re-Astarte
 * @authorLink https://github.com/AkashicBearer
@@ -13,14 +11,14 @@
 
 /*---------- BACKGROUND ----------*/
 body {
+	background-color: transparent;
     background-image: url(https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg);
     background-size: cover;
-    background-position: center;
+}
+.app-mount .backdrop-1wrmKB, .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
+	background: transparent !important;
 }
 
-.appMount-3lHmkl {
-    background: rgba(0, 0, 0, .6);
-}
 /*---------- REMOVE DARK & WHITE THEME BACKGROUNDS ----------*/
 .theme-dark,
 .theme-light {
@@ -44,13 +42,42 @@ body {
     --background-floating: rgba(0, 0, 0, .8);
 }
 
-#app-mount .backdrop-1wrmKB, .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
-    background: transparent !important;
+.theme-dark .layer-3QrUeG, .container-2lgZY8, .wrapper-1Rf91z, .scroller-2TZvBN, .privateChannels-1nO12o, .sidebar-2K8pFh, .scroller-1JbKMe, .scroller-zPkAnE, .scroller-2XE8rp, .scroller-9moviB {
+    background-color: transparent;
 }
 
+.quickswitcher-3JagVE {
+    position: absolute;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 8px 4px rgba(0,0,0,.2);
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;
+    color: white;
+}
 
-/*---------- SLIDE IN AND OUT ANIMATION ----------*/
-/* CHANNELS/DMS */
+.input--jS-j2 {
+    background-color: transparent;
+}
+    
+.container-UC8Ug1 {
+    border-radius: 4px;
+    border: 1px solid #33B5FF;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;
+}
+
+/*---------- SLIDE IN/OUT ANIMATION ----------*/
 div.sidebar-2K8pFh {
     opacity: 0;
     width: 40px;
@@ -63,6 +90,7 @@ div.sidebar-2K8pFh:hover {
     opacity: 1;
     width: 250px;
 }
+
 /* MEMBER LIST */
 [class|=membersWrap] {
     opacity: 0;
@@ -89,154 +117,405 @@ div.sidebar-2K8pFh:hover {
     opacity: 1;
     width: 240px;
 }
-/*---------- VOICE/VIDEO CALL WINDOW TRANSPARENVY ----------*/
-.video-1FfuMD {
-    background: rgba(0, 0, 0, .35);
-}
-.theme-light .video-1FfuMD.minimum-1pRSEN {
-    background: #000000;
-    background: rgba(0, 0, 0, .35);
-}
-.theme-light .wrapper-29NfPK,
-.theme-dark .wrapper-29NfPK {
-    background: rgba(0, 0, 0, 0);
-}
-.video-1kutKI {
+
+/*---------- RANDOM FIXES AND ADJUSTMENTS ----------*/
+/*---------- OTHER BACKGROUND FIXES / MINOR INDIVIDUAL FIXES ----------*/
+/* NITRO STORE PAGE */
+
+/* MAIN */
+.applicationStore-1pNvnv {
     background-color: rgba(0, 0, 0, 0);
 }
-/*---------- CHANGES "JUMP TO PRESENT" BAR ----------*/
-.jumpToPresentBar-9P20AM {
-    background-color: rgba(40, 40, 40, .4);
-    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, .22);
-    border-radius: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-/*---------- REMOVALS ----------*/
-/* PROFILE TAB BORDER ABOVE MESSAGE BOX */
-.footer-1fjuF6 {
-    border-top: 0 solid;
-}
-/* WHITE THEME TAG/PING BACKGROUND */
-.theme-light .wrapper-3WhCwL {
-    background-color: rgba(114, 137, 218, .1);
-    border-radius: 4px
-}
-/* BORDERS BETWEEN CHAT MESSAGES */
-.divider-32i8lo {
-    opacity: 0;
-}
-/* VIDEO CALL BLACK BORDER */
-.videoBackgroundWrapper-2dCt49 {
+/* SECONDARY */
+.scroller-9moviB {
     background-color: rgba(0, 0, 0, 0);
 }
-/* PROFILE POPUP MESSAGE BOX BORDER */
-.quickMessage-2XpSaN {
-    border: 0px solid #dcddde;
+/* NITRO AD BORDER RADIUS */
+.theme-dark .tier1Banner-1B_WXY {
+    border-radius: 15px;
 }
-/* PROFILE POPUP BORDER */
-.theme-light .userPopout-3XzG_A,
-.theme-dark .userPopout-3XzG_A {
-    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
+/* GRADIANT REMOVAL ON GAME SCROLL */
+.gradientOverlayRight-3vMuS8,
+.gradientOverlayLeft-3w159C {
+    left: -1000px
 }
-/*---------- CODE BLOCK RECOLOR ----------*/
-.markup-2BOw-j code {
-    background-color: rgba(40, 40, 40, .4);
-    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0), 0 0 0 1px rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, .22);
-    border-radius: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-/*---------- BORDER ADDITIONS ----------*/
-/* PROFILE TAB TOP */
-.container-3baos1 {
-    border-top: 1px solid rgba(255, 255, 255, .06);
-}
-/* SERVER BAR BORDER */
-.guilds-1SWlCJ {
-    border-right: 2px solid rgba(255, 255, 255, .06);
-}
-/* VOICE CALL TAB TOP AND RIGHT AND BOTTOM */
-.container-1giJp5 {
-    border-bottom: 1px solid var(--background-modifier-accent);
-    border-top: 1px solid rgba(255, 255, 255, .06);
-    border-right: 1px solid rgba(255, 255, 255, .06);
-}
-/* PROFILE TAB RIGHT */
-.container-3baos1 {
-    border-right: 1px solid rgba(255, 255, 255, .06);
-}
-/* CHAT LEFT */
-.chatContent-a9vAAp {
-    border-left: 2px solid rgba(255, 255, 255, 0);
-}
-/*---------- SERVER BAR BACKGROUND ----------*/
-.scroller-2TZvBN {
-    background-color: rgba(255, 255, 255, 0);
-}
-/*---------- SCROLL BAR CHANGES ----------*/
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-    border-radius: 10px;
-}
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgba(64, 68, 75, 1);
-    border-radius: 10px;
-}
-.theme-light .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-}
-.theme-light .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
-    border-color: rgba(255, 255, 255, 0);
+/* GAME SCROLL ARROW BACKGROUND FIXES */
+.scrollerButton-1Vm5_P {
     background-color: rgba(64, 68, 75, 1);
 }
-/*---------- SCROLL BAR CHANGES ----------*/
-.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track {
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgba(64, 68, 75, 1);
-    border-radius: 0;
+/* FRIENDS TAB */
+.theme-light .container-1D34oG,
+.theme-dark .container-1D34oG {
+    background-color: rgba(0, 0, 0, 0);
 }
-.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgba(64, 68, 75, 1);
-    border-radius: 0;
+/*---------- LIGHT (aka RETARDED) MODE COLOR FIXES ----------*/
+/* ACTIVITY TAB FIXES (BOTH LIGHT AND DARK) */
+.theme-light .header-3uLGFv {
+    color: #fff;
 }
-.scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-    border-radius: 0;
+.theme-light .emptyCard-1AOHER {
+    border-color: #00000000;
 }
-.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    border-color: rgba(32, 34, 37, 1);
-    background-color: rgba(64, 68, 75, 1);
-    box-shadow: 0px 0px 0px 10px rgba(32, 34, 37, 1) inset;
-    border-radius: 0;
+.theme-light .wrapper-3UweLa {
+    background: #202225;
+    color: #b9bbbe;
+}
+.theme-light .recentlyPlayedContainer-2F3MqS {
+    background-color: #202225;
+    border: 0px solid #e3e5e8;
+}
+.theme-dark .wrapper-Lii66c,
+.theme-light .wrapper-Lii66c {
+    background-color: #202225;
+    border: 0px solid #e3e5e8;
+}
+.theme-light .card-3EIh8J {
+    box-shadow: inset 0 0 0 0px #e3e5e8, 0 0 0 transparent
+}
+.theme-light .separator-2c4hi3,
+.theme-dark .separator-2c4hi3 {
+    background-color: #f7f7f78f;
+}
+.theme-dark .wrapper-9ppXpy,
+.theme-light .wrapper-9ppXpy {
+    box-shadow: inset 0 1px 0 #f7f7f78f;
+}
+.theme-light .card-3EIh8J:hover {
+    background-color: #18191D;
+}
+/* LINKS */
+.markup-2BOw-j a {
+    color: rgba(0, 176, 244, 1);
+}
+.button-F9qN4n:hover, .keyboard-mode .button-F9qN4n.focused-3ZzkKr {
+	background-color: rgba(79, 170, 101, .36);
+}
+.sourceThumbnail-27dolk {
+	background-color: transparent;
+}
+.background-ujHpbY {
+  background-color: transparent !important;
+}
+  
+.tile-2w4k5N:hover .sourceThumbnail-27dolk,
+.sourceThumbnail-27dolk.selected-1nOkyc {
+	box-shadow: inset 0 0 0 2px #33B5FF;
+}
+.tile-2naSqK {
+	background-color: transparent;
+}
+.card-3RzMcx {
+	background-color: rgba(79, 170, 101, .36); !important;
+}
+.card-2Mz_4z {
+	border-radius: 5px;
+	color: white;
+	border: 1px solid #33B5FF;
+	background-color: rgba(79, 170, 101, .36);
+}
+.border-3dQmSY.speaking-WDn8Wm {
+	box-shadow: inset 0 0 0 2px #33B5FF, inset 0 0 0 3px #000;
+}
+.emptyChannelIcon-cc932w {
+  border-radius: 6px;
+  background-color: #33B5FF;
 }
 
-/*  SCROLLBAR  */
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {         
-    background-color: #00000036;
+.theme-dark .item-3T2z1R {
+  border-color: transparent;
 }
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    background-color: #00f2ff6e;
+
+.item-3T2z1R:last-child {
+  border-radius: 0 5px 5px 0;
 }
-.thumb-2JwNFC {
-    background: rgba(0, 0, 0, .5) !important;
+
+.selectorButton-EEUWed {
+  background-color: rgba(79, 170, 101, .36);
 }
-.track-1JN30G,
-.thumb-2JwNFC {
+#app-mount .selectorButtonSelected-t5V9On {
+  background-color: #33B5FF;
+}
+
+.selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover {
+  background-color: rgba(79, 170, 101, .36);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #4f545c;
+}
+
+.wrapper-39oAo3 {
+    background-color: rgba(79, 170, 101, .36);
+}
+
+.tutorialIcon-3f1miQ {
+    background-color:  #33B5FF;
+    color: white;
+    border-radius: 6px;
+  }
+
+.selected-3xBBKs .icon-2VCx8O, .selected-3xBBKs:hover .icon-2VCx8O, .icon-2VCx8O {
+    color: white;
+}
+
+.theme-dark .activeButton-rvKcqq, .theme-dark .activeButton-rvKcqq:hover {
+    background-color:#33B5FF;
+}
+
+/* REMOVE HELPFUL TIP */
+.theme-dark .protip-YaFfgO {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+
+/* Ping Pongs (cause fk red pings) */
+.pageButton-2ruNwd:hover {
+    color: white;
+    background-color: #33B5FF;
+}
+.base-PmTxvP {
+    background-color: #33B5FF !important;
+}
+/* Guild Icons & Folders */
+.roundButton-CEHyUp {
+    border-radius: 4px;
+}
+.option-3KoAJB.focused-1T6PE5 {
+    color: white; 
+    background-color:#33B5FF !important;
+}
+.wrapper-uf3cnO {
+    background-color: transparent;
+}
+.tutorial-3w5I9h {
+    background-color: rgba(79, 170, 101, .36);
+}
+.guildSeparator-3s64Iy {
+    background: none;
+}
+.guildSeparator-3s64Iy {
+    background: none;
+}
+.childWrapper-anI2G9 {
+    background-color: #33B5FF;
+    color: white;
+}
+.protip-1b9XPC {
+    border-top: none;
+}
+.autocompleteQuerySymbol-1kyGZ5 {
+    background-color: #33B5FF;
+}
+.theme-dark .children-19S4PO:after {
+    background: none;
+}
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    background-color: rgba(79, 170, 101, .36);
+    color: #33B5FF;
+}
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    background-color: #33B5FF;
+}
+
+
+.svg-1X37T1>mask {
+    display: none;
+}
+.icon-27yU2q, .childWrapper-anI2G9, .folderIconWrapper-226oVY, .guildIcon-GuAC7C.iconInactive-98JN5i {
+    border-radius: 25%;
+}
+.folder-21wGz3 {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 25%;
+}
+.folder-21wGz3.hover-2ji_A7 {
+    background-color: rgba(0,0,0,0.7);
+}
+.expandedFolderBackground-2sPsd- {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+.guildsError-b7zR5H, .guildIconUnavailable-5PMHDN, .circleIconButton-jET_ig {
+    border-radius: 20%;
+}
+.guildsError-b7zR5H, .guildIconUnavailable-5PMHDN {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid #f50300;
+}
+.guildsError-b7zR5H:hover {
+    border-color: transparent;
+    background-color: rgba(79, 170, 101, .36);
+}
+/*---------- Quick Switch ----------*/
+
+.theme-dark .tooltipRed-8-9NeP {
+	color: white;
+    background-color: rgba(79, 170, 101, .36);
+}
+.theme-dark .tooltipRed-8-9NeP .tooltipPointer-3ZfirK {
+    border-top-color: rgba(79, 170, 101, .36);
+}
+.theme-dark .tooltip-2QfLtc {
+	box-shadow: none;
+	color: white;
+}
+.textarea-2r0oV8:focus {
+    background-color: rgba(79, 170, 101, .36);
+}
+.tooltip-2QfLtc {
+	border-radius: 7px;
+}
+.layers-3iHuyZ {
+    background-color: rgba(0, 0, 0, 0.77);
+}
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
+  background-color: rgba(0,0,0,0.2) !important;
+}
+.theme-dark .root-1gCeng {
+    background-color: rgba(40, 40, 40, .4);
+    box-shadow: none;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 0, 0, .4); 
+}
+.searchBar-6Kv8R2 {
+    box-shadow: none;
+}
+.container-2XeR5Z {
+    border-radius: 6px;
+    background-color: rgba(0,0,0,.2);
+}
+.colorHeaderSecondary-3Sp3Ft, .colorHeaderPrimary-26Jzh-, .container-UC8Ug1 .colorStandard-2KCXvj, .footer-2gL1pp .colorStandard-2KCXvj  {
+    color: white;
+}
+.panels-j1Uci_ {
+    background-color: rgba(0,0,0,.2);
+}
+.input-1Rv96N {
+    color: white;
+}
+*::-webkit-input-placeholder {
+    color: white !important;
+}
+.input-2VB9rf {
+    padding: 0 12px;
+    border-radius: 8px;
+    height: 60px;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+    box-shadow: none;
+    transition: background-color .3s linear;
+}
+.input-2VB9rf:focus {
+    background-color: rgba(0,0,0,.4);
+}
+.resultFocused-3aIoYe {
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, .4);
+    margin-top: 5px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;   
+}
+.result-oB0z-- {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  height: 39px;
+  padding-top: 3px;
+  padding-left: 6px;
+}
+.header-13MUnb,
+.contentDefault-16dKSY {
+    color: white;
+}
+.iconContainer-3UxHn2 .avatarSizeOverride-2KySyz {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 5px;
+}
+.avatarSizeOverride-2KySyz foreignObject {
+    mask: none;
+}
+.name-2NBmhj {
+    margin-left: 7px;
+}
+.avatarSizeOverride-2KySyz .avatar-VxgULZ {
+    border-radius: 4px;
+}
+.auto-Ge5KZx::-webkit-scrollbar-track {
+    background-color: transparent !important;
     border: none !important;
+}
+.note-S--UP5 {
+    color: silver;
+}
+
+.emptyStateNote-ZYTetQ {
+    color: white;
+}
+.tipsWithoutResults-lGY-De, .tipsWithResults-HhTE9b {
+    border-top: none;
+    color: white;
+}
+.theme-dark .keybindShortcutTipsSelect-HDyfe8:last-of-type:before {
+    background-color: transparent;
+}
+.theme-dark .keybindShortcut-1BD6Z1 span {
+	color: #d7d7d7;
+	box-shadow: none;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.keybindShortcutQuickSwitcher-1-Xs5c span {
+	margin-right: 0;
+}
+.keybindShortcut-1BD6Z1 span {
+	padding: 3px 8px;
+	border-radius: 7px;
+}
+.theme-dark .keybindShortcut-1BD6Z1 span:active {
+    color: white;
+    box-shadow: none;
+    border: none;
+    background-color: #33B5FF;
+}
+.theme-dark .keybindShortcut-1BD6Z1 span .bindArrow-2X3Aom g {
+    fill: #d7d7d7;
+}
+.theme-dark .keybindShortcut-1BD6Z1 span:active .bindArrow-2X3Aom g {
+    fill: white;
+}
+.theme-dark .container-1r6BKw {
+    background-color: transparent;
+}
+.theme-dark .container-1r6BKw {
+    color: white;
+}
+.icon-22AiRD {
+    color: white !important;
+}
+.auto-Ge5KZx::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.35);
+    border-color: transparent;
+}
+.auto-Ge5KZx::-webkit-scrollbar {
+    width: 18px;
+}
+
+
+/*----------  ----------*/
+.children-19S4PO:after {
+    background: none;
+}
+
+.container-3T1zWi:before {
+    box-shadow: none;
 }
 
 /*---------- PROFILE TAB ----------*/
@@ -268,6 +547,7 @@ div.sidebar-2K8pFh:hover {
 /* BACKGROUND */
 .userPopout-3XzG_A {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-size: cover;
     padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -378,6 +658,7 @@ div.sidebar-2K8pFh:hover {
 .inner-1ilYF7 { 
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
     border-radius: 15px;
+    background-size: cover;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
@@ -402,8 +683,8 @@ div.sidebar-2K8pFh:hover {
     border: 1px solid rgba(0, 0, 0, .4);
     margin-top: 5px;
 }
+
 /*---------- CHAT MESSAGE BAR ----------*/
-/* BORDER RADIUS FIX */
 .scrollableContainer-2NUZem {
     border-radius: 20px;
     background-color: rgba(40, 40, 40, .4);
@@ -414,75 +695,6 @@ div.sidebar-2K8pFh:hover {
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0, .4);
-}
-
-/*---------- OTHER BACKGROUND FIXES / MINOR INDIVIDUAL FIXES ----------*/
-/* NITRO STORE PAGE */
-
-/* MAIN */
-.applicationStore-1pNvnv {
-    background-color: rgba(0, 0, 0, 0);
-}
-/* SECONDARY */
-.scroller-9moviB {
-    background-color: rgba(0, 0, 0, 0);
-}
-/* NITRO AD BORDER RADIUS */
-.theme-dark .tier1Banner-1B_WXY {
-    border-radius: 15px;
-}
-/* GRADIANT REMOVAL ON GAME SCROLL */
-.gradientOverlayRight-3vMuS8,
-.gradientOverlayLeft-3w159C {
-    left: -1000px
-}
-/* GAME SCROLL ARROW BACKGROUND FIXES */
-.scrollerButton-1Vm5_P {
-    background-color: rgba(64, 68, 75, 1);
-}
-/* FRIENDS TAB */
-.theme-light .container-1D34oG,
-.theme-dark .container-1D34oG {
-    background-color: rgba(0, 0, 0, 0);
-}
-/*---------- LIGHT (aka RETARDED) MODE COLOR FIXES ----------*/
-/* ACTIVITY TAB FIXES (BOTH LIGHT AND DARK) */
-.theme-light .header-3uLGFv {
-    color: #fff;
-}
-.theme-light .emptyCard-1AOHER {
-    border-color: #00000000;
-}
-.theme-light .wrapper-3UweLa {
-    background: #202225;
-    color: #b9bbbe;
-}
-.theme-light .recentlyPlayedContainer-2F3MqS {
-    background-color: #202225;
-    border: 0px solid #e3e5e8;
-}
-.theme-dark .wrapper-Lii66c,
-.theme-light .wrapper-Lii66c {
-    background-color: #202225;
-    border: 0px solid #e3e5e8;
-}
-.theme-light .card-3EIh8J {
-    box-shadow: inset 0 0 0 0px #e3e5e8, 0 0 0 transparent
-}
-.theme-light .separator-2c4hi3,
-.theme-dark .separator-2c4hi3 {
-    background-color: #f7f7f78f;
-}
-.theme-dark .wrapper-9ppXpy,
-.theme-light .wrapper-9ppXpy {
-    box-shadow: inset 0 1px 0 #f7f7f78f;
-}
-.theme-light .card-3EIh8J:hover {
-    background-color: #18191D;
-}
-/* LINKS */
-.markup-2BOw-j a {
-    color: rgba(0, 176, 244, 1);
 }
 /*------------ PROFILE TAB ------------*/
 /* BOTTOM WHITE BACKGROUND REMOVAL */
@@ -622,108 +834,435 @@ div.sidebar-2K8pFh:hover {
     border-radius: 15px;
 }
 
-/*---------- EMOJI BAR ----------*/
+/* Upload Stuff */
 
-/* MAIN BODY CHANGES */
-.emojiPicker-3m1S-j, .emojiPicker-3m1S-j {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    background-position: center top;
-    background-size: cover;
-    border-radius: 15px;
-    margin-bottom: 13px;
+.uploadArea-3QgLtW {
+    background: rgba(0,0,0,.3);
 }
 
-/* Remove new emoji bar */
-.infoBar-U6oBFk {
-    display:none;
+.uploadArea-3QgLtW .uploadDropModal-2kTwbc .bgScale-1otPtc {
+    background-color: #33B5FF;
 }
 
-/* TOP */
-.emojiPicker-3m1S-j .header-1nkwgG {
-    background-color: rgba(64, 68, 75, 1);
+.uploadArea-3QgLtW .uploadDropModal-2kTwbc .inner-3nWsbo {
+    background-color: rgba(144, 30, 79, 0.76);
+    border: none;
 }
 
-/* BOTTOM */
-.emojiPicker-3m1S-j .categories-1feg4n, .emojiPicker-3m1S-j .categories-1feg4n {
-    background-color: rgba(64, 68, 75, 1);
+.uploadArea-3QgLtW .uploadDropModal-2kTwbc .inner-3nWsbo .title-2Vtl4y,
+.uploadArea-3QgLtW .uploadDropModal-2kTwbc .inner-3nWsbo .instructions-2Du9gG {
+    color: white;
 }
 
-/* not the emoji tab, but emoji bar */
-.emojiButton-jE9tXC {
-    display:none;
-    border-left: 0px;
-}
-.separator-42rNt0 {
-    width: 0px;
-}
-
-/*---------- BOTTOM LEFT VOICE AND PROFILE PANELS TRANCPERENCY FIX ----------*/
-.panels-j1Uci_ {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-/*---------- FILE ATTACHMENT POPUP ----------*/
-.uploadModal-2ifh8j {
+.theme-dark .uploadModal-2ifh8j {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-position: center top;
-    background-size: cover;
-    background-color: #000000;
-}
-.footer-3mqk7D {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-position: center bottom;
-    background-size: cover;
-    background-color: #000000;
-}
-/*---------- @ & / POPUP THINGY ----------*/
-
-/* BACKGROUND */
-.autocomplete-1vrmpx, .autocomplete-Z9HwQh {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    border-radius: 20px;
+    border-radius: 13px;
     background-color: rgba(40, 40, 40, .4);
-    margin-top: 5px;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4);
-} 
-
-/* HIGHLIGHT ALL ROWS AND ADD BORDER */
-.selectable-3dP3y- {
-    border-radius: 20px;
-    background-color: rgba(40, 40, 40, .4);
-    margin-top: 5px;
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4);   
-}
-/* SELECTOR HOVER */
-.selectorSelected-1_M1WV {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    background-position: center center;
+    border: 1px solid #33B5FF;
     background-size: cover;
-    border-radius: 15px;
-    margin-top: 0px;
-    margin-left: 0px;
-	margin-right: 0px;
+}
+
+.theme-dark .footer-3mqk7D {
+    box-shadow: none;
+}
+
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D {
+    background-color: transparent;
+
+}
+
+.theme-dark .uploadModal-2ifh8j .inner-3nWsbo {
+    border: none;
+}
+
+.theme-dark .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {
+    border-radius: 13px;
+    background-color: rgba(40, 40, 40, .4);
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4);
+    border: 1px solid #33B5FF;  
 }
 
-/*---------- SEARCH SETTINGS POPUP THINGY ----------*/
+/* --- */
 
+.theme-dark .option-96V44q .filter-3Y_im- {
+    color: silver;
+}
+
+.theme-dark .option-96V44q.user-O3Czj0 .displayUsername-Qekxml {
+    color: white;
+}
+
+.item-2hkk8m {
+    width: 12px;
+    height: 16px !important;
+    border-radius: 50%;
+    background-color: #33B5FF;
+}
+
+.item-2hkk8m[style*="height: 40px;"] {
+    background-color: #33B5FF;
+}
+
+.theme-dark .pageWrapper-1PgVDX {
+    background-color: transparent;
+}
+
+.bg-AYqtMd {
+    opacity: 0 !important;
+}
+
+.theme-dark .searchBox-3Y2Vi7,
+.css-1wqqa50-container {
+    background-color: rgba(0, 0, 0, 0.32);
+    box-shadow: none;
+}
+
+.detailsBlock-FoDTGA {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.theme-dark .clearIcon-2N9YIn, 
+.theme-dark .searchIcon-1a1-yA,
+.css-ncjuf0-control,
+.css-1k00wn6-singleValue,
+.billingInformation-1MZXzx,
+.select-2fjwPw,
+.option-3KoAJB {
+    color: white;
+}
+
+.lookFilled-22uAsw.select-2fjwPw {
+    background-color: #33B5FF;
+    border-color: #33B5FF;
+}
+
+.option-3KoAJB[aria-selected=true] {
+    color: white;
+    background-color: #33B5FF !important;
+}
+
+.popout-VcNcHB {
+    border: 1px solid #33B5FF;
+    background: #33B5FF;
+}
+
+.option-3KoAJB:focus, .option-3KoAJB:hover {
+    background-color: rgba(0, 0, 0, .451);
+    color: white;
+}
+
+.selectedIcon-3uS11H {
+    color: white;
+ }
+
+.css-3vaxre-menu {
+    background-color: #33B5FF;
+    box-shadow: none;
+    color: white;
+    border-top: none;
+}
+
+
+.css-1yz4bi9-option {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+
+.css-rzbxvl-option {
+    background-color: rgba(0, 0, 0, 0.22);
+    color: white;
+}
+
+.theme-dark .sectionSeparator-2OWiNT {
+    border: none;
+}
+
+.theme-dark .card-3DjzTQ, 
+.theme-dark .cardPlaceholder-1zrbbe {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+.circleIconButton-jET_ig {
+    background-color: black;
+    color: #33B5FF;
+}
+
+.circleIconButton-jET_ig.selected-ugP_am {
+    color: #fff;
+    background-color: #33B5FF;
+}
+
+.bda-dark .theme-dark .slide-2pHaq5 {
+    background: linear-gradient(230deg, #33B5FF 0%, #33B5FF 100%);
+    box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.6);
+}
+
+.container-3w7J-x {
+    background-color: transparent;
+}
+
+.avatarSpeaking-2IGMRN {
+    border: 2px solid #21ac21;
+    box-shadow: none;
+}
+
+.modeUnread-1qO3K1 .icon-1DeIlz, 
+.modeUnread-1qO3K1:hover .icon-1DeIlz {
+    color: white;
+}
+
+.unread-2lAfLh {
+    display: none;
+}
+
+.wrapper-2jXpOf:hover .content-1x5b-n,
+.listDefault-3ir5aS .clickable-1lCRLF:hover .content-1Wq3SX {
+	background-color: transparent;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;
+}
+
+.content-1x5b-n,
+.content-1Wq3SX {
+	border-radius: 7px;
+}
+
+.modeSelected-346R90 .content-1x5b-n,
+.modeSelected-346R90:hover .content-1x5b-n,
+.listDefault-3ir5aS .clickable-1lCRLF.selected-3t3Csj .content-1Wq3SX {
+	background-color: transparent;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;
+}
+
+.wrapper-2jXpOf.modeLocked-SZJhTy .icon-1DeIlz,
+.wrapper-2jXpOf.modeLocked-SZJhTy .name-23GUGE {
+     color: #33B5FF;
+}
+
+.users-3kndPl,
+.iconBadge-qZ4Ksk {
+    background-color: #33B5FF;
+}
+
+.total-i6us2n {
+    background-color: #33B5FF;
+}
+
+.total-i6us2n:after {
+    display: none;
+}
+
+.wrapper-2tAnRe,
+.membersGroup-v9BXpm {
+    color: white;
+}
+
+.membersGroup-v9BXpm {
+    text-align: center;
+}
+
+.members-1998pB {
+    background-color: transparent;
+}
+
+.members-1998pB>div {
+    background-color: transparent;
+}
+
+.lowMotionItem-1DvHia,
+.wanderingCubesItem-WPXqao {
+    background-color: #33B5FF;
+    width: 14px;
+    border-radius: 50px;
+    height: 14px;
+}
+
+.mediaBarGrabber-1FqnbN, 
+.mediaBarProgress-1xaPtl, 
+.mediaBarProgress-1xaPtl:after, 
+.mediaBarProgress-1xaPtl:before,
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
+    background-color: #33B5FF;
+}
+
+.progress-3Rbvu0[style*="background-color: rgb(233, 231, 231);"] {
+    background-color: transparent !important;
+}
+
+.small-1CUeBa[style*="background-color: rgb(114, 137, 218);"] {
+    background-color:  #33B5FF !important; 
+}
+
+
+.activity-2Gy-9S {
+    color: white;
+}
+
+.reaction-1hd86g {
+    background-color: rgba(255,255,255,.029);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu {
+    background-color: rgba(128, 218, 114, 0.17);
+    border: 1px solid rgba(128, 218, 114, 0.40);
+}
+
+.reactionMe-wv5HKu .reactionCount-2mvXRV, 
+.reactionMe-23mbRf:hover .reactionCount-2mvXRV {
+    color: #63d851;
+}
+
+.styleFixed-sX-yHV {
+    border-radius: 7px;
+    box-shadow: none;
+    background: #33B5FF;
+}
+
+.separator-2I32lJ {
+    border: none;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: white !important;
+}
+
+.description-3_Ncsb, 
+.labelDescriptor-1PqHgD,
+.theme-dark .guildName-3WI6ml, 
+.theme-dark .override-2YgiXd, 
+.theme-dark .overrideHighlight-YPcBxt,
+.h5-18_1nd {
+    color: #dadada;
+}
+
+.themeDefault-24hCdX {
+    background-color: #33B5FF;
+}
+
+.sizeDefault-2YlOZr {
+    border-radius: 6px;
+}
+
+.themeDefault-24hCdX.valueChecked-m-4IJZ {
+    background-color: #33B5FF;
+}
+
+.sizeDefault-2YlOZr:after, 
+.sizeMini-1ii40f {
+    border-radius: 4px;
+}
+
+.theme-dark .item-26Dhrx,
+.theme-dark .item-26Dhrx:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
+.radioBar-bMNUI- path[fill] {
+    fill: #33B5FF;
+}
+.radioIconForeground-XwlXQN {
+    color: white;
+    r:7;
+}
+
+.cardPrimary-1Hv-to, 
+.theme-dark .item-26Dhrx {
+    border-color: black;
+    border-radius: 8px;
+}
+
+.item-26Dhrx[aria-checked=true] {
+    background-color: #33B5FF !important;
+    border: none !important;
+}
+
+.css-15ejc46-control,
+.css-gvi9bl-control,
+.css-6fzn47-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+}
+
+.css-gvi9bl-control:hover,
+.css-6fzn47-control:hover,
+.css-15ejc46-control:hover {
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.css-181m2lf-menu {
+    background-color: #33B5FF;
+    box-shadow: none;
+    color: white;
+    border: none;
+}
+
+.lighten-2aYaaU {
+    opacity: .5;
+}
+
+.css-rzbxvl-option {
+    background-color: #33B5FF;
+}
+
+.theme-dark .separator-3gy7tq {
+    box-shadow: none;
+}
+
+.cardPrimaryOutline-29Ujqw {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.theme-dark .override-2YgiXd:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.theme-dark .button-2CgfFz {
+    background-color: rgba(0, 0, 0, .3) !important;
+    box-shadow: none !important;
+}
+
+.css-o3gndj-placeholder {
+    color: white; 
+    opacity: 1;
+}
+
+.theme-dark .footer-2gL1pp {
+    box-shadow: none;
+    background: none;
+}
+
+.search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
+    color: white;
+}
+
+/* Pins */
+
+.messagesPopoutWrap-1MQ1bW {
+	border-radius: 20px;
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    background-color: rgba(40, 40, 40, .4);
+    background-size: cover;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 2px solid #33B5FF;
+}
+
+/* Search */
 .container-3ayLPN, .container-yqaFcK {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
     border-radius: 15px;
@@ -733,7 +1272,7 @@ div.sidebar-2K8pFh:hover {
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4);
+    border: 1px solid #33B5FF;
 }
 
 .layer-2KE1M9 {
@@ -748,25 +1287,38 @@ div.sidebar-2K8pFh:hover {
     border: 1px solid rgba(0, 0, 0, .4);    
 }
 
-/*---------- Pins ----------*/
- .root-1gCeng {
-    border-radius: 20px;
-	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
-    background-color: rgba(40, 40, 40, .4);
-    margin-top: 5px;
+.searchResultsWrap-3-pOjs {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    border-radius: 15px;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4); 
+    border: 1px solid #33B5FF;
 }
 
-/*---------- ??? ----------*/
-.modal-3c3bKg {
-    border-radius: 20px;
-    background-color: rgba(40, 40, 40, .4);
-    margin-top: 5px;
+.autocomplete-1vrmpx, .outerWrapper-3-llkA {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://cdn.discordapp.com/attachments/397573099597594653/733242908777512970/anime-girl-cyborg-black-dress-sci-fi-long-hair-library.jpg");
+    border-radius: 15px;
+	background-size: cover;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, .4); 
+    border: 1px solid #33B5FF;
+}
+
+.wrapper-1-Fsb8, .categoryHeader-O1zU94, .base-1pYU8j{
+	background-color: transparent !important;
+    border: none !important;
+}
+
+.itemWrapper-14KrHY:hover,
+.autocompleteRowVertical-q1K4ky:hover,
+.autocompleteRow-2OthDa:hover,
+.selectable-3dP3y-:hover,
+.selectable-3dP3y-:focus {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid #33B5FF;
 }
